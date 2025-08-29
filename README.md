@@ -42,32 +42,32 @@ backend/ml/
 
 ## 🚀 How to run (local)
 
-1. Ensure the dataset is at: `project_bfsi/backend/ml/data/transactions.csv`.
+1. Ensure the dataset is at: `LLM_BACKEND_TEAM-B/backend/ml/data/transactions.csv`.
 
 2. Run EDA (Jupyter notebook):
 
    ```bash
-   cd project_bfsi/backend/ml
+   cd LLM_BACKEND_TEAM-B/backend/ml
    jupyter notebook notebook/eda.ipynb
    ```
 
-   EDA outputs (PNG/CSV) will be written to `project_bfsi/backend/ml/eda_outputs/`.
+   EDA outputs (PNG/CSV) will be written to `LLM_BACKEND_TEAM-B/backend/ml/eda_outputs/`.
 
 3. Run preprocessing script to generate cleaned CSV:
 
    ```bash
-   cd project_bfsi/backend/ml
+   cd LLM_BACKEND_TEAM-B/backend/ml
    python preprocessing.py
    ```
 
-   Processed CSV: `project_bfsi/backend/ml/data/transactions_processed.csv`.
+   Processed CSV: `LLM_BACKEND_TEAM-B/backend/ml/data/transactions_processed.csv`.
 
 ## 🧾 Output locations
 
-* Raw data: `project_bfsi/backend/ml/data/transactions.csv`
-* EDA visuals & summaries: `project_bfsi/backend/ml/eda_outputs/`
-* Processed dataset: `project_bfsi/backend/ml/data/transactions_processed.csv`
-* Trained models (future): `project_bfsi/backend/ml/models/`
+* Raw data: `LLM_BACKEND_TEAM-B/backend/ml/data/transactions.csv`
+* EDA visuals & summaries: `LLM_BACKEND_TEAM-B/backend/ml/eda_outputs/`
+* Processed dataset: `LLM_BACKEND_TEAM-B/backend/ml/data/transactions_processed.csv`
+* Trained models (future): `LLM_BACKEND_TEAM-B/backend/ml/models/`
 
 ## 🛠️ Next steps (high priority)
 
