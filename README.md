@@ -84,5 +84,5 @@ backend/ml/
 
 ## 🗂️ Contact & Ownership
 
-Maintained by: **FRONTEND TEAM B** — update `README.md` with correct owner/contact email.
+Maintained by: **LLM BACKEND TEAM B** — update `README.md` with correct owner/contact email.
 
