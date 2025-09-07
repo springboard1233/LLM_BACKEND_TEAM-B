@@ -1,7 +1,0 @@
-# Ignore all files inside models and eda_outputs directories
-ml/models/*
-ml/eda_outputs/*
-
-# Keep the directories themselves
-!ml/models/
-!ml/eda_outputs/

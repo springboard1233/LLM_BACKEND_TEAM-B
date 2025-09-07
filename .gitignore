@@ -1,0 +1,7 @@
+# Ignore everything inside eda_outputs and models
+backend/ml/eda_outputs/*
+backend/ml/models/*
+
+# But keep the folders themselves
+!backend/ml/eda_outputs/.gitkeep
+!backend/ml/models/.gitkeep
