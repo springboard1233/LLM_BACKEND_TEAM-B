@@ -1,5 +1,5 @@
-<div align="center" style="height:150px" >
-<img alt="bank-icon" src="./backend/assets/bank.png">
+<div align="center" >
+<img height=150px alt="bank-icon" src="./backend/assets/bank.png">
 
 </div>
 <br>
