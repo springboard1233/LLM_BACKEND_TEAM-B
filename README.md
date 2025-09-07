@@ -1,4 +1,4 @@
-<div align="center" style="height:300px" >
+<div align="center" style="height:200px" >
 <img alt="bank-icon" src="./backend/assets/bank.png">
 
 </div>
