@@ -1,8 +1,7 @@
 <div align="center" >
-<img height=150px alt="bank-icon" src="./backend/assets/bank.png">
+<img height=180px alt="bank-icon" src="./backend/assets/bank.png">
 
 </div>
-<br>
 
 <div align="center">
 
