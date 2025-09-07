@@ -4,9 +4,8 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 
 # CONFIG - change if needed
-INPUT_PATH = "./backend/ml/data/transactions.csv"
-OUTPUT_PATH = "./backend/ml/data/transactions_processed.csv"
-
+INPUT_PATH = "./data/transactions.csv"
+OUTPUT_PATH = "./data/transactions_processed.csv"
 print("[INFO] Starting preprocessing...")
 
 # 1) Load dataset
