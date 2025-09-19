@@ -14,6 +14,7 @@ from imblearn.over_sampling import SMOTE
 DATA_PATH = "./ml/data/transactions_processed.csv"
 MODELS_DIR = "./ml/models/fraud_models"
 
+# Function to train multiple models with enhanced techniques
 def train_multiple_models():
     print("[INFO] Starting enhanced training...")
     
@@ -56,6 +57,7 @@ def train_multiple_models():
         'class_weight': ['balanced']
     }
     
+    # Random Forest with Grid Search
     rf = RandomForestClassifier(random_state=42)
     rf_grid = GridSearchCV(rf, rf_params, cv=3, scoring='f1', n_jobs=-1)
     rf_grid.fit(X_train_balanced, y_train_balanced)
@@ -103,6 +105,7 @@ def train_multiple_models():
     best_model = None
     best_f1 = 0
     
+    # Evaluate and compare models
     for name, model in models.items():
         y_pred = model.predict(X_test)
         f1 = f1_score(y_test, y_pred)
@@ -130,6 +133,7 @@ def train_multiple_models():
     
     return models, best_model
 
+# Entry point
 if __name__ == "__main__":
     try:
         models, best_model = train_multiple_models()
