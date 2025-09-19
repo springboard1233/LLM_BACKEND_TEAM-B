@@ -10,6 +10,7 @@ INPUT_PATH = "./ml/data/transactions.csv"
 OUTPUT_PATH = "./ml/data/transactions_processed.csv"
 MODELS_DIR = "./ml/models/"
 
+# Improved Preprocessing Function
 def improved_preprocessing():
     print("[INFO] Starting improved preprocessing...")
     
@@ -164,6 +165,7 @@ def improved_preprocessing():
         'fraud_rate': float(df['fraud_label'].mean())
     }
     
+    # Save feature info
     feature_info_path = os.path.join(MODELS_DIR, "feature_info.pkl")
     joblib.dump(feature_info, feature_info_path)
     print(f"[INFO] Feature info saved at: {feature_info_path}")
@@ -171,6 +173,7 @@ def improved_preprocessing():
     print("[SUCCESS] Improved preprocessing completed!")
     return df, encoders, feature_info
 
+# Example usage
 if __name__ == "__main__":
     try:
         df, encoders, feature_info = improved_preprocessing()
