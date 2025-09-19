@@ -10,10 +10,11 @@ from sklearn.model_selection import cross_val_score
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Paths
+# Paths to data and model
 DATA_PATH = "./ml/data/transactions_processed.csv"
 MODEL_PATH = "./ml/models/fraud_models/fraud_model.pkl"
 
+# Function to evaluate the model
 def evaluate_model():
     print("[INFO] Starting model evaluation...")
     
@@ -41,6 +42,7 @@ def evaluate_model():
     f1 = f1_score(y, y_pred)
     auc = roc_auc_score(y, y_pred_proba)
     
+    # Print metrics
     print("\n" + "="*50)
     print("MODEL PERFORMANCE METRICS")
     print("="*50)
@@ -83,6 +85,7 @@ def evaluate_model():
     print(f"Non-fraud (0): {(y==0).sum()} ({(y==0).mean()*100:.1f}%)")
     print(f"Fraud (1):     {(y==1).sum()} ({(y==1).mean()*100:.1f}%)")
     
+    # Plot confusion matrix
     return {
         'accuracy': accuracy,
         'precision': precision,
@@ -93,6 +96,7 @@ def evaluate_model():
         'feature_importance': feature_importance if hasattr(model, 'feature_importances_') else None
     }
 
+# Run evaluation if executed as a script
 if __name__ == "__main__":
     try:
         results = evaluate_model()
