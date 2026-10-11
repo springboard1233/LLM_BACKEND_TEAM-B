@@ -6,7 +6,7 @@
 <div align="center">
 
 <h1>BFSI Predictive Modeling</h1>
-Fraud detection pipeline — exploratory data analysis (EDA), preprocessing, modeling and evaluation (work in progress).
+Fraud detection pipeline — exploratory data analysis (EDA), preprocessing, modeling and evaluation.
 
 <br>
 
